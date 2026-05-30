@@ -2,13 +2,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+     
 }
-
 body {
     background-color: #1e1e1e;
+    padding:20px 100px;
     font-family: sans-serif;
     color: #a0a0a0;
     line-height: 1.6;
+    
 }
 
 .container {
@@ -18,7 +21,6 @@ body {
     gap: 50px;
     margin: auto;
     padding-top: 40px;
-
 }
 
 .sidebar {
@@ -27,6 +29,8 @@ body {
     border-radius: 16px;
     border: 1px solid #3a3a3a;
     padding: 40px;
+    position: sticky;
+    top: 40px;
 
 }
 
@@ -35,6 +39,9 @@ body {
     width: 120px;
     border-radius: 50%;
     border: 1px solid #3a3a3a;
+    object-fit: cover;
+    object-position: center top;
+
 }
 
 .profile h2 {
@@ -215,7 +222,8 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
     margin-top: 30px;
 }
 .edtech{
-    padding-left: 20px;
+    position: relative;
+    margin-top: 30px;
 }
 .year{
     font-size: 0.9rem;
@@ -236,7 +244,80 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
 .learning{
     color: #a0a0a0;
 }
-.edfirst 
+.edfirst,.edsecond 
 {
+    position: relative;
     margin-bottom: 30px;
+    padding-left: 25px;
+}
+.goal{
+    height: 15px;
+    width: 15px;
+   border-radius: 50%;
+   border: 3px solid #ffbf00;
+   position: absolute;
+   top: 4px;
+   left: 0px;
+   z-index: 1;
+}
+.linar{
+    position: absolute;
+    width: 2px;
+    top: 5px;
+    border: 2px solid #3a3a3a;
+    bottom: 0px;
+    left: 5px;
+}
+
+/* projects working */
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 30px;
+}
+.projects img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.projects{
+    border-radius: 12px;
+    background-color: #1e1e1e;
+    border: 1px solid #3a3a3a;
+    overflow:hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease ;
+
+}
+.projects:hover{
+    transform: translatey(-10px);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+}
+.card{
+    padding: 20px;
+
+}
+.card h3{
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+.card p{
+    color: #a0a0a0;
+    line-height: 1.6;
+
+}
+.card span{
+    display: inline-block;
+    background-color: rgba(255,191,0,0.1);
+    color: #ffbf00;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+@media screen {
+    
 }
